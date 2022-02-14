@@ -43,16 +43,19 @@ body {
       display: flex;
       flex-direction: column;
       flex: 1 1 auto;
-      overflow-y: auto;
-      //height: 2000px;
+      overflow: auto;
       background-color: rgb(255, 0, 21);
-      .navigation {
-      }
       .content {
         flex: 1 1 auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        .navigation {
+        }
         .carousel {
         }
         .container-for-video {
+          //height: 2000px;
         }
       }
       .footer {

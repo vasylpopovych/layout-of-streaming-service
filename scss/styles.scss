@@ -1,6 +1,7 @@
 html,
 body {
   height: 100%;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
 }
 
 //common styles
@@ -11,6 +12,8 @@ body {
 .f-row {
   display: flex;
 }
+
+
 
 .wrapper {
   display: flex;
@@ -29,6 +32,28 @@ body {
     justify-content: space-between;
     align-items: center;
     box-shadow: 0px 3px 2px rgb(158, 155, 155);
+    .logo-wrapper {
+      font-size: 35px;
+      color: orange;
+      font-weight: bold;
+      letter-spacing: 0.2em;
+      align-items: center;
+      
+      i {
+        padding-bottom: 10px;
+        cursor: pointer;
+      }
+      .logo-text{
+        margin-left: 15px;
+        cursor: pointer;
+      }
+    }
+    .search-wrapper {
+     
+    }
+    .menu-wrapper {
+     
+    }
   }
   .main-container {
     display: flex;

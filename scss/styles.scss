@@ -31,8 +31,10 @@ body {
       flex-direction: column;
       justify-content: space-between;
       .streamers-panel {
+        background-color: rgb(12, 170, 12);
       }
       .info-panel {
+        background-color: rgb(3, 77, 3);
         height: 150px;
       }
     }

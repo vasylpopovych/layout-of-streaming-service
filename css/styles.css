@@ -53,7 +53,12 @@ body {
           justify-content: space-between;
 }
 
+.wrapper .main-container .sidebar .streamers-panel {
+  background-color: #0caa0c;
+}
+
 .wrapper .main-container .sidebar .info-panel {
+  background-color: #034d03;
   height: 150px;
 }
 

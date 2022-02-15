@@ -3,6 +3,16 @@ body {
   height: 100%;
 }
 
+.p-sides {
+  padding: 0 16px;
+}
+
+.f-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -17,12 +27,23 @@ body {
 }
 
 .wrapper .header {
-  background-color: orange;
+  background-color: white;
   position: fixed;
   top: 0;
   z-index: 100;
   height: 50px;
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-shadow: 0px 3px 2px #9e9b9b;
+          box-shadow: 0px 3px 2px #9e9b9b;
 }
 
 .wrapper .main-container {
@@ -40,7 +61,7 @@ body {
 .wrapper .main-container .sidebar {
   background-color: #2bff00;
   height: 100%;
-  width: 300px;
+  width: 250px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -76,7 +97,6 @@ body {
       -ms-flex: 1 1 auto;
           flex: 1 1 auto;
   overflow: auto;
-  background-color: #ff0015;
 }
 
 .wrapper .main-container .main .content {

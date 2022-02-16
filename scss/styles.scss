@@ -107,19 +107,49 @@ body {
         font-size: 15px;
         cursor: pointer;
         &:hover {
-          background-color: rgb(228, 220, 220);;
+          background-color: rgb(228, 220, 220);
+        }
+        &:hover ~ .drop-down-menu {
+          display: block;
         }
       }
       .drop-down-menu {
         position: absolute;
-        top: 70px;
-        right: 100px;
-        background-color: aqua;
+        top: 42px;
+        right: 16px;
+        background-color: whitesmoke;
+        width: 150px;
+        border-radius: 5px;
+        box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.75);
         display: none;
+        &:hover {
+          display: block;
+        }
         .menu-item {
+          padding: 5px 16px;
+          cursor: pointer;
+          &:hover{
+            background-color: rgb(228, 220, 220);
+            border-radius: 5px;
+          }
+          &:first-child:hover {
+            border-radius: 5px 5px 0 0;
+          }
+          &:nth-child(2):hover {
+            border-radius: 0;
+          }
+          &:last-child {
+            color: red;
+            border-top: 1px solid grey;
+            &:hover{
+              border-radius: 0 0 5px 5px;
+                }
+          }
           .icon {
+            font-size: 18px;
           }
           .text {
+            padding-left: 15px;
           }
         }
       }

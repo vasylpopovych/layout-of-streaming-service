@@ -67,6 +67,56 @@ body {
   cursor: pointer;
 }
 
+.wrapper .header .search-wrapper {
+  width: 35%;
+  padding-top: 4px;
+}
+
+.wrapper .header .search-wrapper .input-wrapper {
+  width: 100%;
+}
+
+.wrapper .header .search-wrapper .input-wrapper input {
+  width: 100%;
+  height: 80%;
+  padding: 7px;
+  border-radius: 5px 0px 0px 5px;
+  border: 1px solid grey;
+  border-right: none;
+  outline: none;
+}
+
+.wrapper .header .search-wrapper .input-wrapper input:focus {
+  border: 2px solid #3f77df;
+}
+
+.wrapper .header .search-wrapper .input-wrapper button {
+  height: 80%;
+  cursor: pointer;
+  text-align: center;
+  border-radius: 0px 5px 5px 0px;
+  border: 1px solid grey;
+  border-left: none;
+}
+
+.wrapper .header .search-wrapper .input-wrapper button:hover {
+  background-color: #c7c2c2;
+}
+
+.wrapper .header .search-wrapper .input-wrapper button i {
+  font-size: 15px;
+}
+
+.wrapper .header .search-wrapper .voise-search {
+  font-size: 23px;
+  padding: 1px 0px 0px 10px;
+  cursor: pointer;
+}
+
+.wrapper .header .search-wrapper .voise-search:hover {
+  color: #706e6e;
+}
+
 .wrapper .main-container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -118,6 +168,7 @@ body {
       -ms-flex: 1 1 auto;
           flex: 1 1 auto;
   overflow: auto;
+  background-color: #ff0015;
 }
 
 .wrapper .main-container .main .content {

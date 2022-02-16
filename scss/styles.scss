@@ -47,7 +47,6 @@ body {
       }
     }
     .search-wrapper {
-      //border: 2px solid gray;
       width: 35%;
       padding-top: 4px;
       .input-wrapper {
@@ -57,12 +56,11 @@ body {
           height: 80%;
           padding: 7px;
           border-radius: 5px 0px 0px 5px;
-          border: 1px solid grey;
+          border: 2px solid rgb(192, 190, 190);
           border-right: none;
           outline: none;
           &:focus {
             border: 2px solid rgb(63, 119, 223);
-//при додаванні бордеру трішки зміщуються іконки вверх, або навпаки контейнер розтягується знизу.
           }
         }
         button {
@@ -70,7 +68,7 @@ body {
           cursor: pointer;
           text-align: center;
           border-radius: 0px 5px 5px 0px;
-          border: 1px solid grey;
+          border: 2px solid rgb(192, 190, 190);
           border-left: none;
           &:hover {
             background-color: rgb(199, 194, 194);
@@ -82,7 +80,7 @@ body {
       }
       .voise-search {
         font-size: 23px;
-        padding: 1px 0px 0px 10px;
+        padding: 2px 0px 0px 10px;
         cursor: pointer;
         &:hover {
           color: rgb(112, 110, 110);

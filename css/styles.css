@@ -110,11 +110,45 @@ body {
 .wrapper .header .search-wrapper .voise-search {
   font-size: 23px;
   padding: 2px 0px 0px 10px;
+  color: #c0bebe;
   cursor: pointer;
 }
 
 .wrapper .header .search-wrapper .voise-search:hover {
   color: #706e6e;
+}
+
+.wrapper .header .menu-wrapper .notification-icon {
+  width: 35px;
+  font-size: 22px;
+  margin-right: 10px;
+  color: #c0bebe;
+  cursor: pointer;
+}
+
+.wrapper .header .menu-wrapper .notification-icon:hover {
+  color: #706e6e;
+}
+
+.wrapper .header .menu-wrapper .menu-icon {
+  background-color: orange;
+  border-radius: 50%;
+  width: 35px;
+  padding-top: 5px;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.wrapper .header .menu-wrapper .menu-icon:hover {
+  background-color: #e4dcdc;
+}
+
+.wrapper .header .menu-wrapper .drop-down-menu {
+  position: absolute;
+  top: 70px;
+  right: 100px;
+  background-color: aqua;
+  display: none;
 }
 
 .wrapper .main-container {

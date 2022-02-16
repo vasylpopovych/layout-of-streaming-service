@@ -81,6 +81,7 @@ body {
       .voise-search {
         font-size: 23px;
         padding: 2px 0px 0px 10px;
+        color: rgb(192, 190, 190);
         cursor: pointer;
         &:hover {
           color: rgb(112, 110, 110);
@@ -88,6 +89,40 @@ body {
       }
     }
     .menu-wrapper {
+      .notification-icon {
+        width: 35px;
+        font-size: 22px;
+        margin-right: 10px;
+        color: rgb(192, 190, 190);
+        cursor: pointer;
+        &:hover {
+          color: rgb(112, 110, 110);
+        }
+      }
+      .menu-icon {
+        background-color: orange;
+        border-radius: 50%;
+        width: 35px;
+        padding-top: 5px;
+        font-size: 15px;
+        cursor: pointer;
+        &:hover {
+          background-color: rgb(228, 220, 220);;
+        }
+      }
+      .drop-down-menu {
+        position: absolute;
+        top: 70px;
+        right: 100px;
+        background-color: aqua;
+        display: none;
+        .menu-item {
+          .icon {
+          }
+          .text {
+          }
+        }
+      }
     }
   }
   .main-container {

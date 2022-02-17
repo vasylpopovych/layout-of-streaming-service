@@ -211,7 +211,7 @@ body {
 }
 
 .wrapper .main-container .sidebar {
-  background-color: #2bff00;
+  background-color: #999898;
   height: 100%;
   width: 250px;
   display: -webkit-box;
@@ -227,12 +227,16 @@ body {
 }
 
 .wrapper .main-container .sidebar .streamers-panel {
-  background-color: #0caa0c;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+  height: 100%;
+  overflow-y: auto;
 }
 
 .wrapper .main-container .sidebar .info-panel {
-  background-color: #034d03;
-  height: 150px;
+  background-color: #565b5f;
+  min-height: 150px;
 }
 
 .wrapper .main-container .main {
@@ -269,6 +273,6 @@ body {
 }
 
 .wrapper .main-container .main .footer {
-  background-color: grey;
+  background-color: #cecbcb;
   height: 50px;
 }

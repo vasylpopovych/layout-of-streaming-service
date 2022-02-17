@@ -120,7 +120,7 @@ body {
         background-color: whitesmoke;
         width: 150px;
         border-radius: 5px;
-        box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.75);
+        box-shadow: 3px 3px 5px 0px rgba(0, 0, 0, 0.75);
         display: none;
         &:hover {
           display: block;
@@ -128,7 +128,7 @@ body {
         .menu-item {
           padding: 5px 16px;
           cursor: pointer;
-          &:hover{
+          &:hover {
             background-color: rgb(228, 220, 220);
             border-radius: 5px;
           }
@@ -141,9 +141,9 @@ body {
           &:last-child {
             color: red;
             border-top: 1px solid grey;
-            &:hover{
+            &:hover {
               border-radius: 0 0 5px 5px;
-                }
+            }
           }
           .icon {
             font-size: 18px;
@@ -162,18 +162,20 @@ body {
     top: 50px;
     height: 100%;
     .sidebar {
-      background-color: rgb(43, 255, 0);
+      background-color: rgb(153, 152, 152);
       height: 100%;
       width: 250px;
       display: flex;
       flex-direction: column;
       justify-content: space-between;
       .streamers-panel {
-        background-color: rgb(12, 170, 12);
+        flex: 1 1 auto;
+        height: 100%;
+        overflow-y: auto;
       }
       .info-panel {
-        background-color: rgb(3, 77, 3);
-        height: 150px;
+        background-color: rgb(86, 91, 95);
+        min-height: 150px;
       }
     }
 
@@ -199,7 +201,7 @@ body {
         }
       }
       .footer {
-        background-color: grey;
+        background-color: rgb(206, 203, 203);
         height: 50px;
       }
     }

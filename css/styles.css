@@ -232,6 +232,91 @@ body {
           flex: 1 1 auto;
   height: 100%;
   overflow-y: auto;
+  padding-top: 16px;
+}
+
+.wrapper .main-container .sidebar .streamers-panel .streamer-info {
+  border: 1px solid #5f5f5f;
+  margin-bottom: 15px;
+}
+
+.wrapper .main-container .sidebar .streamers-panel .streamer-info .avatar {
+  -ms-flex-preferred-size: 50px;
+      flex-basis: 50px;
+  text-align: left;
+}
+
+.wrapper .main-container .sidebar .streamers-panel .streamer-info .nickname {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 150px;
+          flex: 1 1 150px;
+  text-align: left;
+}
+
+.wrapper .main-container .sidebar .streamers-panel .streamer-info .viewers {
+  -ms-flex-preferred-size: 50px;
+      flex-basis: 50px;
+  text-align: right;
+}
+
+.wrapper .main-container .sidebar .streamers-panel .streamer-info .viewers .blob {
+  background: #b10b0b;
+  border-radius: 50%;
+  margin: 7px;
+  height: 7px;
+  width: 7px;
+  -webkit-box-shadow: 0 0 0 0 #d61010;
+          box-shadow: 0 0 0 0 #d61010;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-animation: pulse 2s infinite;
+          animation: pulse 2s infinite;
+}
+
+@-webkit-keyframes pulse {
+  0% {
+    -webkit-transform: scale(0.95);
+            transform: scale(0.95);
+    -webkit-box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.7);
+            box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.7);
+  }
+  70% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    -webkit-box-shadow: 0 0 0 5px rgba(0, 0, 0, 0);
+            box-shadow: 0 0 0 5px rgba(0, 0, 0, 0);
+  }
+  100% {
+    -webkit-transform: scale(0.95);
+            transform: scale(0.95);
+    -webkit-box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+            box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+  }
+}
+
+@keyframes pulse {
+  0% {
+    -webkit-transform: scale(0.95);
+            transform: scale(0.95);
+    -webkit-box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.7);
+            box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.7);
+  }
+  70% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    -webkit-box-shadow: 0 0 0 5px rgba(0, 0, 0, 0);
+            box-shadow: 0 0 0 5px rgba(0, 0, 0, 0);
+  }
+  100% {
+    -webkit-transform: scale(0.95);
+            transform: scale(0.95);
+    -webkit-box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+            box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+  }
+}
+
+.wrapper .main-container .sidebar .streamers-panel .streamer-info .viewers .amount {
+  font-weight: bold;
 }
 
 .wrapper .main-container .sidebar .info-panel {

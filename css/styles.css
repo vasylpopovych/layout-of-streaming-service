@@ -248,6 +248,7 @@ body {
           flex: 1 1 auto;
   height: 100%;
   overflow-y: auto;
+  border-bottom: 1px solid white;
 }
 
 .wrapper .main-container .sidebar .streamers-panel .streamer-info {
@@ -362,8 +363,48 @@ body {
 }
 
 .wrapper .main-container .sidebar .info-panel {
-  background-color: #768999;
-  min-height: 150px;
+  background-color: #c0bbbb;
+  min-height: 100px;
+  margin: 16px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.wrapper .main-container .sidebar .info-panel .text {
+  margin-top: 5px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.wrapper .main-container .sidebar .info-panel .text::-moz-selection {
+  background-color: orange;
+  color: white;
+}
+
+.wrapper .main-container .sidebar .info-panel .text::selection {
+  background-color: orange;
+  color: white;
+}
+
+.wrapper .main-container .sidebar .info-panel .social-logos {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.wrapper .main-container .sidebar .info-panel .social-logos .logo {
+  cursor: pointer;
+  font-size: 22px;
+  margin: 5px 10px;
+}
+
+.wrapper .main-container .sidebar .info-panel .social-logos .logo:hover {
+  color: #3f77df;
 }
 
 .wrapper .main-container .main {
@@ -421,6 +462,6 @@ body {
     display: none;
   }
   .info-panel {
-    display: none;
+    display: none !important;
   }
 }

@@ -309,8 +309,20 @@ body {
         }
       }
       .footer {
-        background-color: rgb(206, 203, 203);
+        background-color: white;
         height: 50px;
+        margin-top: 10px;
+        font-weight: bold;
+        justify-content: center;
+        align-items: center;
+        .text {
+          font-family: "Lucida Console", "Courier New", monospace;
+          letter-spacing: 1px;
+        }
+        .icon {
+          padding-left: 15px;
+          font-size: 18px;
+        }
       }
     }
   }

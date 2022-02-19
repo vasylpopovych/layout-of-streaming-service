@@ -18,19 +18,24 @@ body {
   visibility: hidden;
 }
 
-.scroll::-webkit-scrollbar {
+.scroll-y::-webkit-scrollbar {
   width: 5px;
 }
  
-.scroll::-webkit-scrollbar-thumb {
+.scroll-y::-webkit-scrollbar-thumb {
   background: #666;
   border-radius: 20px;
 }
 
-.scroll::-webkit-scrollbar-track {
+.scroll-y::-webkit-scrollbar-track {
   background: #ddd;
   border-radius: 20px;
 }
+
+.scroll-x::-webkit-scrollbar {
+  height: 0px;
+}
+
 /* ---------------------------------------------------------------- */
 
 .wrapper {
@@ -294,12 +299,36 @@ body {
       flex-direction: column;
       flex: 1 1 auto;
       overflow: auto;
-      background-color: rgb(255, 0, 21);
+      background-color: white;
       .content {
         flex: 1 1 auto;
         display: flex;
         flex-direction: column;
         .category-panel {
+          margin-top: 16px;
+          overflow-x: auto;
+          height: 35px;
+          .item{
+            background-color: #ddd;
+            flex: 1 1 auto;
+            margin-right: 10px;
+            padding: 5px 10px;
+            cursor: pointer;
+            border-radius: 20px;
+            border: 1px solid #666;
+            font-weight: bold;
+            white-space: nowrap;
+            &:hover{
+              background-color: rgb(201, 194, 194);
+            }
+            &:first-child {
+              background-color: orange;
+              color: white;
+              min-width: 50px;
+              border: 1px solid orange;
+            }
+          }
+          
         }
         .carousel {
         }

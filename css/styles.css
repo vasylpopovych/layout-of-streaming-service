@@ -435,14 +435,11 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
 }
 
 .wrapper .main-container .main .footer {
   background-color: white;
-  height: 50px;
+  min-height: 50px;
   margin-top: 10px;
   font-weight: bold;
   -webkit-box-pack: center;

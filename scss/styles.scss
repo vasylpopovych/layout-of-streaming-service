@@ -299,8 +299,7 @@ body {
         flex: 1 1 auto;
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
-        .navigation {
+        .category-panel {
         }
         .carousel {
         }
@@ -310,7 +309,7 @@ body {
       }
       .footer {
         background-color: white;
-        height: 50px;
+        min-height: 50px;
         margin-top: 10px;
         font-weight: bold;
         justify-content: center;

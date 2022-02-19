@@ -18,18 +18,22 @@ body {
   visibility: hidden;
 }
 
-.scroll::-webkit-scrollbar {
+.scroll-y::-webkit-scrollbar {
   width: 5px;
 }
 
-.scroll::-webkit-scrollbar-thumb {
+.scroll-y::-webkit-scrollbar-thumb {
   background: #666;
   border-radius: 20px;
 }
 
-.scroll::-webkit-scrollbar-track {
+.scroll-y::-webkit-scrollbar-track {
   background: #ddd;
   border-radius: 20px;
+}
+
+.scroll-x::-webkit-scrollbar {
+  height: 0px;
 }
 
 /* ---------------------------------------------------------------- */
@@ -421,7 +425,7 @@ body {
       -ms-flex: 1 1 auto;
           flex: 1 1 auto;
   overflow: auto;
-  background-color: #ff0015;
+  background-color: white;
 }
 
 .wrapper .main-container .main .content {
@@ -435,14 +439,42 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+}
+
+.wrapper .main-container .main .content .category-panel {
+  margin-top: 16px;
+  overflow-x: auto;
+  height: 35px;
+}
+
+.wrapper .main-container .main .content .category-panel .item {
+  background-color: #ddd;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+  margin-right: 10px;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 20px;
+  border: 1px solid #666;
+  font-weight: bold;
+  white-space: nowrap;
+}
+
+.wrapper .main-container .main .content .category-panel .item:hover {
+  background-color: #c9c2c2;
+}
+
+.wrapper .main-container .main .content .category-panel .item:first-child {
+  background-color: orange;
+  color: white;
+  min-width: 50px;
+  border: 1px solid orange;
 }
 
 .wrapper .main-container .main .footer {
   background-color: white;
-  height: 50px;
+  min-height: 50px;
   margin-top: 10px;
   font-weight: bold;
   -webkit-box-pack: center;

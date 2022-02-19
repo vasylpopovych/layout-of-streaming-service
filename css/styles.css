@@ -467,6 +467,12 @@ body {
   .logo-text {
     display: none;
   }
+  .footer .text {
+    display: none;
+  }
+  .footer .icon {
+    display: none;
+  }
 }
 
 @media (max-width: 1200px) {

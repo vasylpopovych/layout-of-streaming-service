@@ -334,6 +334,15 @@ body {
   .logo-text{
     display: none;
   }
+  .footer {
+    .text {
+      display: none;
+    }
+    .icon {
+      display: none;
+    }
+    
+  }
 }
 
 @media (max-width: 1200px) {

@@ -472,6 +472,30 @@ body {
   border: 1px solid orange;
 }
 
+.wrapper .main-container .main .content .carousel {
+  margin: 5%;
+  height: 300px;
+  width: 90%;
+  background-color: #666;
+}
+
+.wrapper .main-container .main .content .container-for-video {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (33%)[3];
+      grid-template-columns: repeat(3, 33%);
+  -ms-grid-rows: (250px)[3];
+      grid-template-rows: repeat(3, 250px);
+  row-gap: 20px;
+  -webkit-column-gap: 10px;
+          column-gap: 10px;
+}
+
+.wrapper .main-container .main .content .container-for-video .video {
+  border: 1px solid #666;
+  background-color: gray;
+}
+
 .wrapper .main-container .main .footer {
   background-color: white;
   min-height: 50px;

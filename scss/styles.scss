@@ -4,7 +4,6 @@ body {
   font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
 }
 
-
 //common styles
 .p-sides {
   padding: 0 16px;
@@ -21,7 +20,7 @@ body {
 .scroll-y::-webkit-scrollbar {
   width: 5px;
 }
- 
+
 .scroll-y::-webkit-scrollbar-thumb {
   background: #666;
   border-radius: 20px;
@@ -285,7 +284,7 @@ body {
             font-size: 22px;
             margin: 5px 10px;
             &:hover {
-              color:rgb(63, 119, 223)
+              color: rgb(63, 119, 223);
             }
           }
         }
@@ -308,7 +307,7 @@ body {
           margin-top: 16px;
           overflow-x: auto;
           height: 35px;
-          .item{
+          .item {
             background-color: #ddd;
             flex: 1 1 auto;
             margin-right: 10px;
@@ -318,7 +317,7 @@ body {
             border: 1px solid #666;
             font-weight: bold;
             white-space: nowrap;
-            &:hover{
+            &:hover {
               background-color: rgb(201, 194, 194);
             }
             &:first-child {
@@ -328,12 +327,24 @@ body {
               border: 1px solid orange;
             }
           }
-          
         }
         .carousel {
+          margin: 5%;
+          height: 300px;
+          width: 90%;
+          background-color: #666;
         }
         .container-for-video {
-          //height: 2000px;
+          display: grid;
+          grid-template-columns: repeat(3, 33%);
+          grid-template-rows: repeat(3, 250px);
+          row-gap: 20px;
+          column-gap: 10px;
+          //gap: 10px;
+          .video {
+            border: 1px solid #666;
+            background-color: gray;
+          }
         }
       }
       .footer {
@@ -356,10 +367,8 @@ body {
   }
 }
 
-
-
 @media (max-width: 550px) {
-  .logo-text{
+  .logo-text {
     display: none;
   }
   .footer {
@@ -369,12 +378,11 @@ body {
     .icon {
       display: none;
     }
-    
   }
 }
 
 @media (max-width: 1200px) {
-  .sidebar{
+  .sidebar {
     width: 70px !important;
   }
   .nickname {
@@ -387,4 +395,3 @@ body {
     display: none !important;
   }
 }
-

@@ -334,15 +334,40 @@ body {
           width: 90%;
           background-color: #666;
         }
-        .container-for-video {
+        .video-panel {
           display: grid;
           grid-template-columns: repeat(3, 33%);
           grid-template-rows: repeat(3, 250px);
           row-gap: 20px;
           column-gap: 10px;
-          .video {
+          .video-container {
             border: 1px solid #666;
             background-color: gray;
+            .preview {
+              position: relative;
+              img {
+                width: 100%;
+                max-height: 70%;
+                object-fit: fill;
+              }
+              .live-icon {
+                background-color: rgb(236, 13, 13);
+                color: white;
+                border-radius: 3px;
+                padding: 1px 3px;
+                font-size: 13px;
+                position: absolute;
+                top: 5px;
+                left: 5px;
+              }
+              .viewers-or-time {
+                position: absolute;
+                bottom: 5px;
+                right: 5px;
+              }
+            }
+            .description {
+            }
           }
         }
       }
@@ -397,18 +422,16 @@ body {
   }
 }
 
-@media(max-width: 1000px){
-  .container-for-video{
+@media (max-width: 1000px) {
+  .video-panel {
     grid-template-columns: repeat(2, 50%) !important;
     grid-template-rows: repeat(4, 250px) !important;
   }
-  
 }
 
-@media(max-width: 700px){
-  .container-for-video{
+@media (max-width: 700px) {
+  .video-panel {
     grid-template-columns: repeat(1, 100%) !important;
     grid-template-rows: repeat(7, 250px) !important;
   }
-  
 }

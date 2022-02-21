@@ -479,7 +479,7 @@ body {
   background-color: #666;
 }
 
-.wrapper .main-container .main .content .container-for-video {
+.wrapper .main-container .main .content .video-panel {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (33%)[3];
@@ -491,9 +491,37 @@ body {
           column-gap: 10px;
 }
 
-.wrapper .main-container .main .content .container-for-video .video {
+.wrapper .main-container .main .content .video-panel .video-container {
   border: 1px solid #666;
   background-color: gray;
+}
+
+.wrapper .main-container .main .content .video-panel .video-container .preview {
+  position: relative;
+}
+
+.wrapper .main-container .main .content .video-panel .video-container .preview img {
+  width: 100%;
+  max-height: 70%;
+  -o-object-fit: fill;
+     object-fit: fill;
+}
+
+.wrapper .main-container .main .content .video-panel .video-container .preview .live-icon {
+  background-color: #ec0d0d;
+  color: white;
+  border-radius: 3px;
+  padding: 1px 3px;
+  font-size: 13px;
+  position: absolute;
+  top: 5px;
+  left: 5px;
+}
+
+.wrapper .main-container .main .content .video-panel .video-container .preview .viewers-or-time {
+  position: absolute;
+  bottom: 5px;
+  right: 5px;
 }
 
 .wrapper .main-container .main .footer {
@@ -547,7 +575,7 @@ body {
 }
 
 @media (max-width: 1000px) {
-  .container-for-video {
+  .video-panel {
     -ms-grid-columns: (50%)[2] !important;
         grid-template-columns: repeat(2, 50%) !important;
     -ms-grid-rows: (250px)[4] !important;
@@ -556,7 +584,7 @@ body {
 }
 
 @media (max-width: 700px) {
-  .container-for-video {
+  .video-panel {
     -ms-grid-columns: (100%)[1] !important;
         grid-template-columns: repeat(1, 100%) !important;
     -ms-grid-rows: (250px)[7] !important;

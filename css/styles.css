@@ -519,6 +519,10 @@ body {
      object-position: center;
 }
 
+.wrapper .main-container .main .content .video-panel .video-container .preview img:hover ~ .cover {
+  display: block;
+}
+
 .wrapper .main-container .main .content .video-panel .video-container .preview .live-icon {
   background-color: #ec0d0d;
   color: white;
@@ -528,6 +532,12 @@ body {
   position: absolute;
   top: 5px;
   left: 5px;
+  cursor: pointer;
+  z-index: 3;
+}
+
+.wrapper .main-container .main .content .video-panel .video-container .preview .live-icon:hover ~ .cover {
+  display: block;
 }
 
 .wrapper .main-container .main .content .video-panel .video-container .preview .viewers-or-time {
@@ -539,6 +549,36 @@ body {
   position: absolute;
   bottom: 5px;
   right: 5px;
+  font-size: 13px;
+  cursor: pointer;
+  z-index: 3;
+}
+
+.wrapper .main-container .main .content .video-panel .video-container .preview .viewers-or-time:hover ~ .cover {
+  display: block;
+}
+
+.wrapper .main-container .main .content .video-panel .video-container .preview .cover {
+  display: none;
+  background-color: #666;
+  opacity: 0.6;
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+}
+
+.wrapper .main-container .main .content .video-panel .video-container .preview .cover:hover {
+  display: block;
+}
+
+.wrapper .main-container .main .content .video-panel .video-container .preview .cover i {
+  color: white;
+  margin-top: 25%;
+  font-size: 30px;
+  cursor: pointer;
+  z-index: 2;
 }
 
 .wrapper .main-container .main .content .video-panel .video-container .description {

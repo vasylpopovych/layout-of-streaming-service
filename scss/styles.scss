@@ -67,7 +67,6 @@ body {
       .logo-text {
         margin-left: 15px;
         cursor: pointer;
-        // додати медіа запрос який при зменшені екрану буде прибирати текст з логотипу
       }
     }
     .search-wrapper {
@@ -353,6 +352,9 @@ body {
                 max-height: 200px;
                 object-fit: cover;
                 object-position: center;
+                &:hover ~ .cover {
+                  display: block;
+                }
               }
               .live-icon {
                 background-color: rgb(236, 13, 13);
@@ -363,6 +365,11 @@ body {
                 position: absolute;
                 top: 5px;
                 left: 5px;
+                cursor: pointer;
+                z-index: 3;
+                &:hover ~ .cover {
+                  display: block;
+                }
               }
               .viewers-or-time {
                 background-color: rgb(12, 12, 12);
@@ -373,6 +380,33 @@ body {
                 position: absolute;
                 bottom: 5px;
                 right: 5px;
+                font-size: 13px;
+                cursor: pointer;
+                z-index: 3;
+                &:hover ~ .cover {
+                  display: block;
+                }
+              }
+              .cover{
+                display: none;
+                background-color: #666;
+                opacity: 0.6;
+                position: absolute;
+                top: 0;
+                height: 100%;
+                width: 100%;
+                z-index: 1;
+                &:hover {
+                  display: block;
+                }
+                i {
+                  //іконка залишається прозорою, тоді коли повинна не мати прозорості.
+                  color: white;
+                  margin-top: 25%;
+                  font-size: 30px;
+                  cursor: pointer;
+                  z-index: 2;
+                }
               }
             }
             .description {

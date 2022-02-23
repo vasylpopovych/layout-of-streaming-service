@@ -341,8 +341,6 @@ body {
           .video-container {
             display: flex;
             flex-direction: column;
-            border: 1px solid #666;
-            background-color: rgb(228, 222, 222);
             overflow: hidden;
             .preview {
               position: relative;
@@ -401,7 +399,7 @@ body {
                 i {
                   //іконка залишається прозорою, тоді коли повинна не мати прозорості.
                   color: white;
-                  margin-top: 25%;
+                  margin-top: 22%;
                   font-size: 30px;
                   cursor: pointer;
                   z-index: 2;
@@ -499,7 +497,7 @@ body {
 @media (max-width: 1700px) {
   .video-panel {
     grid-template-columns: repeat(3, 33%) !important;
-    grid-template-rows: repeat(4, 250px) !important;
+    grid-template-rows: repeat(3, 250px) !important;
   }
 }
 

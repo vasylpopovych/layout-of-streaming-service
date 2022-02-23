@@ -500,13 +500,11 @@ body {
       -ms-flex-direction: column;
           flex-direction: column;
   border: 1px solid #666;
-  background-color: gray;
+  background-color: #e4dede;
+  overflow: hidden;
 }
 
 .wrapper .main-container .main .content .video-panel .video-container .preview {
-  -webkit-box-flex: 1;
-      -ms-flex: 1 1 70%;
-          flex: 1 1 70%;
   position: relative;
 }
 
@@ -582,9 +580,70 @@ body {
 }
 
 .wrapper .main-container .main .content .video-panel .video-container .description {
-  -webkit-box-flex: 1;
-      -ms-flex: 1 1 10%;
-          flex: 1 1 10%;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
+  border: 1px solid #d3cece;
+  padding-top: 5px;
+}
+
+.wrapper .main-container .main .content .video-panel .video-container .description .avatar {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 10%;
+          flex: 0 0 10%;
+  border: 1px solid #d3cece;
+}
+
+.wrapper .main-container .main .content .video-panel .video-container .description .avatar img {
+  border: 2px solid white;
+  border-radius: 50%;
+  height: 30px;
+  width: 30px;
+  text-align: center;
+}
+
+.wrapper .main-container .main .content .video-panel .video-container .description .title-and-nickname-container {
+  border: 1px solid #d3cece;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 80%;
+          flex: 0 0 80%;
+  text-align: left;
+  padding-left: 10px;
+  overflow-x: hidden;
+  text-overflow: ellipsis;
+}
+
+.wrapper .main-container .main .content .video-panel .video-container .description .title-and-nickname-container .title {
+  border: 1px solid #d3cece;
+  text-align: left;
+  font-weight: bold;
+  overflow-x: hidden;
+  text-overflow: ellipsis;
+  font-size: 14px;
+  white-space: nowrap;
+}
+
+.wrapper .main-container .main .content .video-panel .video-container .description .title-and-nickname-container .title:hover {
+  color: #555fe2;
+}
+
+.wrapper .main-container .main .content .video-panel .video-container .description .title-and-nickname-container .nickname {
+  border: 1px solid #d3cece;
+  text-align: left;
+  font-weight: bold;
+  font-size: 12px;
+  color: #666;
+}
+
+.wrapper .main-container .main .content .video-panel .video-container .description .title-and-nickname-container .nickname:hover {
+  color: #555fe2;
+}
+
+.wrapper .main-container .main .content .video-panel .video-container .description .settings {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 10%;
+          flex: 0 0 10%;
+  border: 1px solid #d3cece;
 }
 
 .wrapper .main-container .main .footer {

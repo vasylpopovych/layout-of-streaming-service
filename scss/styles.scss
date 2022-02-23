@@ -423,11 +423,12 @@ body {
                   height: 30px;
                   width: 30px;
                   text-align: center;
+                  cursor: pointer;
                 }
               }
               .title-and-nickname-container {
                 //border: 1px solid rgb(211, 206, 206);
-                flex: 0 0 80%;
+                flex: 0 0 85%;
                 text-align: left;
                 padding-left: 10px;
                 overflow-x: hidden;
@@ -460,8 +461,19 @@ body {
                 }
               }
               .settings {
-                flex: 0 0 10%;
-                //border: 1px solid rgb(211, 206, 206);
+                flex: 0 0 5%;
+                display: flex;
+                flex-direction: column;
+                padding-top: 3px;
+                margin-bottom: 10px;
+                cursor: pointer;
+                .blob{
+                  background-color: black;
+                  border-radius: 50%;
+                  height: 5px;
+                  width: 5px;
+                  margin-bottom: 2px;
+                }
               }
             }
           }

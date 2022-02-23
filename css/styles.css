@@ -599,12 +599,13 @@ body {
   height: 30px;
   width: 30px;
   text-align: center;
+  cursor: pointer;
 }
 
 .wrapper .main-container .main .content .video-panel .video-container .description .title-and-nickname-container {
   -webkit-box-flex: 0;
-      -ms-flex: 0 0 80%;
-          flex: 0 0 80%;
+      -ms-flex: 0 0 85%;
+          flex: 0 0 85%;
   text-align: left;
   padding-left: 10px;
   overflow-x: hidden;
@@ -639,8 +640,26 @@ body {
 
 .wrapper .main-container .main .content .video-panel .video-container .description .settings {
   -webkit-box-flex: 0;
-      -ms-flex: 0 0 10%;
-          flex: 0 0 10%;
+      -ms-flex: 0 0 5%;
+          flex: 0 0 5%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-top: 3px;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.wrapper .main-container .main .content .video-panel .video-container .description .settings .blob {
+  background-color: black;
+  border-radius: 50%;
+  height: 5px;
+  width: 5px;
+  margin-bottom: 2px;
 }
 
 .wrapper .main-container .main .footer {

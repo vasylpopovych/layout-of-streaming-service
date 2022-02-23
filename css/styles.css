@@ -812,6 +812,7 @@ body {
       -ms-flex-direction: column;
           flex-direction: column;
   padding-top: 3px;
+  margin-left: 5px;
   margin-bottom: 10px;
   cursor: pointer;
 }

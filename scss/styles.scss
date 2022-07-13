@@ -56,9 +56,9 @@ body {
     box-shadow: 0px 3px 2px rgb(158, 155, 155);
     .logo-wrapper {
       font-size: 35px;
-      color: orange;
+      color: #ff9900;
       font-weight: bold;
-      letter-spacing: 0.2em;
+      letter-spacing: 0.1em;
       align-items: center;
       i {
         padding-bottom: 10px;
@@ -123,7 +123,7 @@ body {
         }
       }
       .menu-icon {
-        background-color: orange;
+        background-color: #ff9900;
         border-radius: 50%;
         width: 35px;
         padding-top: 5px;
@@ -185,7 +185,7 @@ body {
     top: 50px;
     height: 100%;
     .sidebar {
-      background-color: #ddd;
+      background-color: #f2f2f3;
       height: 100%;
       width: 250px;
       display: flex;
@@ -201,7 +201,7 @@ body {
           cursor: pointer;
           align-items: center;
           &:hover {
-            background-color: rgb(216, 209, 209);
+            background-color: #e5e6e6;
           }
           .avatar {
             margin-right: 10px;
@@ -261,7 +261,7 @@ body {
         }
       }
       .info-panel {
-        background-color: rgb(192, 187, 187);
+        background-color: #d8d9da;
         min-height: 100px;
         margin: 16px;
         display: flex;
@@ -271,7 +271,7 @@ body {
           font-weight: bold;
           text-align: center;
           &::selection {
-            background-color: orange;
+            background-color: #ff9900;
             color: white;
           }
         }
@@ -306,7 +306,7 @@ body {
           overflow-x: auto;
           height: 35px;
           .item {
-            background-color: #ddd;
+            background-color: #f2f2f3;
             flex: 1 1 auto;
             margin-right: 10px;
             padding: 5px 10px;
@@ -316,13 +316,13 @@ body {
             font-weight: bold;
             white-space: nowrap;
             &:hover {
-              background-color: rgb(201, 194, 194);
+              background-color: #e5e6e6;
             }
             &:first-child {
-              background-color: orange;
+              background-color: #ff9900;
               color: white;
               min-width: 50px;
-              border: 1px solid orange;
+              border: 1px solid #ff9900;
             }
           }
         }
@@ -337,7 +337,7 @@ body {
             width: 600px;
             display: flex;
             overflow: hidden;
-            background-color: rgb(212, 206, 206);
+            background-color: #f2f2f3;
             .preview {
               flex: 0 1  75%;
               position: relative;
@@ -614,7 +614,7 @@ body {
   }
 }
 
-//@media
+//@media queries
 
 @media (max-width: 1700px) {
   .video-panel {
@@ -658,6 +658,9 @@ body {
 @media (max-width: 550px) {
   .logo-text {
     display: none;
+  }
+  .search-wrapper {
+    width: 55% !important;
   }
   .footer {
     .text {
